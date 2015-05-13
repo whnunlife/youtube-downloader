@@ -1,0 +1,17 @@
+{
+  "name": "atphp/youtube-downloader",
+  "type": "library",
+  "license": "MIT",
+  "require": {
+    "psr/log": "~1.0.0",
+    "guzzlehttp/guzzle": "~5.0"
+  },
+  "require-dev": {
+    "monolog/monolog": "~1.13.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "atphp\\youtube_downloader\\": "src"
+    }
+  }
+}
