@@ -1,4 +1,4 @@
-Youtube downloader library
+Youtube downloader library [![Build Status](https://travis-ci.org/atphp/youtube-downloader.svg?branch=v0.1)](https://travis-ci.org/atphp/youtube-downloader)
 =======
 
 Download it using composer
