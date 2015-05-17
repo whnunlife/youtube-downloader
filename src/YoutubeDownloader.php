@@ -136,4 +136,15 @@ class YoutubeDownloader
         return $this->findBestFormat($videoId, $format)['url'];
     }
 
+    public function download($localPath, $videoId, $format = 'best')
+    {
+        $localDir = dirname($localPath);
+        if (!is_writable($localDir)) {
+            throw new \RuntimeException('Not writable directory: ' . $localDir);
+        }
+
+        $url = $this->getDownloadUrl($videoId, $format);
+        $this->getClient()->get($url, ['save_to' => $localPath]);
+    }
+
 }
