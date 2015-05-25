@@ -99,7 +99,7 @@ class YoutubeDownloader
      * @param $videoId
      * @return array
      */
-    protected function getInfo($videoId)
+    public function getInfo($videoId)
     {
         if (null === $this->info) {
             $this->info = $this->doGetInfo($videoId);
